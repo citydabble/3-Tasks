@@ -46,4 +46,26 @@
 }
 */
 
+- (IBAction)CancelButtonPressed:(UIButton *)sender {
+    [self.delegate didCancel];
+}
+
+
+- (Task *) returnNewTaskObject {
+    Task *taskObject = [[Task alloc] init];
+    taskObject.title = self.TaskTitleTextField.text;
+    taskObject.description = self.TaskTitleTextField.text;
+    taskObject.date = self.AddTaskDatePicker.date;
+    taskObject.isCompleted = NO;
+    
+    return taskObject;
+    
+    /// TODO :  Add validation that if a user enters blank info -
+    /// no new object is created
+}
+
+
+- (IBAction)AddTaskButtonPressed:(UIButton *)sender {
+    [self.delegate didAddTask:[self returnNewTaskObject]];
+}
 @end

@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Task.h"
 
 @interface DetailsViewController : UIViewController
+
+@property (strong, nonatomic) Task *task;
+
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *AllTasksButtonPressed;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *EditTaskButtonPressed;
+@property (strong, nonatomic) IBOutlet UILabel *TaskTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *TaskDueDateLabel;
+@property (strong, nonatomic) IBOutlet UILabel *TaskDescriptionLabel;
 
 @end

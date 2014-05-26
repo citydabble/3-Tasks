@@ -46,4 +46,9 @@
 }
 */
 
+- (IBAction)SaveTaskBarButtonPressed:(UIBarButtonItem *)sender {
+}
+
+- (IBAction)CancelTaskBarButtonPressed:(UIBarButtonItem *)sender {
+}
 @end
