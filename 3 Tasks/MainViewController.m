@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 
+
 @interface MainViewController ()
 
 @end
@@ -61,8 +62,10 @@
     }
     
     
-    else if ([segue.destinationViewController isKindOfClass:[DetailsView]
-        
+    else if ([segue.destinationViewController isKindOfClass:[DetailsViewController class]]) {
+        DetailsViewController *detailsViewController = segue.destinationViewController;
+        DetailsViewController.delegate = self;
+    }
 }
 
 

@@ -11,7 +11,6 @@
 #import "DetailsViewController.h"
 
 
-
 @interface MainViewController : UIViewController <AddTaskViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 - (IBAction)SortBarButtonPressed:(UIBarButtonItem *)sender;
 - (IBAction)AddTaskBarButtonPressed:(UIBarButtonItem *)sender;

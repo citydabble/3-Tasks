@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC0CD46E1931BB880056BDDE /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = ../DetailsViewController.h; sourceTree = "<group>"; };
+		BC0CD46E1931BB880056BDDE /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		BC0CD46F1931BB880056BDDE /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = ../DetailsViewController.m; sourceTree = "<group>"; };
 		BC99198D18E142FB003749C3 /* 3 Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3 Tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC99199018E142FB003749C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +96,16 @@
 		BC0CD47119325EC50056BDDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCE35564193175FE0031F24F /* AddTaskViewController.h */,
+				BCE35565193175FE0031F24F /* AddTaskViewController.m */,
+				BC0CD46E1931BB880056BDDE /* DetailsViewController.h */,
+				BC0CD46F1931BB880056BDDE /* DetailsViewController.m */,
+				BC9FC3B818E53943009BF434 /* Task.h */,
+				BC9FC3B918E53943009BF434 /* Task.m */,
+				BCE35567193176150031F24F /* EditTaskViewController.h */,
+				BCE35568193176150031F24F /* EditTaskViewController.m */,
+				BCE35561193175C60031F24F /* MainViewController.h */,
+				BCE35562193175C60031F24F /* MainViewController.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -133,23 +143,13 @@
 		BC99199618E142FB003749C3 /* 3 Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				BC0CD47119325EC50056BDDE /* Models */,
 				BC99199F18E142FB003749C3 /* AppDelegate.h */,
-				BC9FC3B818E53943009BF434 /* Task.h */,
-				BC9FC3B918E53943009BF434 /* Task.m */,
 				BC9919A018E142FB003749C3 /* AppDelegate.m */,
+				BC0CD47119325EC50056BDDE /* Models */,
 				BC9919AB18E142FB003749C3 /* Main_iPhone.storyboard */,
 				BC9919AE18E142FB003749C3 /* Main_iPad.storyboard */,
 				BC9919B118E142FB003749C3 /* Images.xcassets */,
 				BC99199718E142FB003749C3 /* Supporting Files */,
-				BCE35564193175FE0031F24F /* AddTaskViewController.h */,
-				BCE35565193175FE0031F24F /* AddTaskViewController.m */,
-				BC0CD46E1931BB880056BDDE /* DetailsViewController.h */,
-				BC0CD46F1931BB880056BDDE /* DetailsViewController.m */,
-				BCE35567193176150031F24F /* EditTaskViewController.h */,
-				BCE35568193176150031F24F /* EditTaskViewController.m */,
-				BCE35561193175C60031F24F /* MainViewController.h */,
-				BCE35562193175C60031F24F /* MainViewController.m */,
 			);
 			path = "3 Tasks";
 			sourceTree = "<group>";
@@ -426,6 +426,7 @@
 				GCC_PREFIX_HEADER = "3 Tasks/3 Tasks-Prefix.pch";
 				INFOPLIST_FILE = "3 Tasks/3 Tasks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -439,6 +440,7 @@
 				GCC_PREFIX_HEADER = "3 Tasks/3 Tasks-Prefix.pch";
 				INFOPLIST_FILE = "3 Tasks/3 Tasks-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
